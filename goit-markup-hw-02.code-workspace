@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "goit-markup-hw-01"
+		},
+		{
+			"name": "goit-markup-hw-01-1",
+			"path": "../goit-markup-hw-01-1"
+		}
+	],
+	"settings": {}
+}
