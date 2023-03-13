@@ -224,7 +224,7 @@ img {
     flex-direction: column;
     align-content: space-between;    
     margin-left: 40px;
-    height: 796px;
+    height: 700px;
 }
 
 @media (max-width: 767px) {
