@@ -246,6 +246,21 @@ img {
     color: var(--nav-click);
 }
 
+@media (max-width: 767px) {
+    .header-link {
+        display: block;
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            color: var(--dark-color);
+            text-decoration: none;
+            margin-bottom: 40px;
+        transition-property: color;
+    }
+}
+
+@media (min-width: 768px) {
 .header-link {
     display: block;
     font-weight: 600;
@@ -257,6 +272,7 @@ img {
     text-align: center;
     padding: 24px 0;
     transition-property: color;
+}
 }
 
                     /*Анимация на все ссылки*/
@@ -281,6 +297,8 @@ img {
     position: relative;
 }
 
+
+@media (min-width: 768px) {
 .header-link.current::after {
     display: block;
     content: "";
@@ -292,6 +310,7 @@ img {
     left: 0;
     bottom: 0;
     transition-property: color;
+}
 }
 
 .header-link:hover,
@@ -366,6 +385,77 @@ img {
     width: 29.54px;
     height: 18.62px;
 }
+
+/* Содрано с из гита, как пример мобильного меню.   ДО --ххх--*/
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    display: block;
+    justify-content: left;
+    list-style: none;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.mobile-menu .header-link {
+    
+}
+
+.mobile-menu .header-link.current {
+    color: var(--button-order-hover);
+}
+                                    /* -- ххх --*/
+
+
                                         /*main*/
 
                           /* --- для скрытия заголовков --- */
