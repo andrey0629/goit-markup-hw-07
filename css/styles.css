@@ -224,7 +224,6 @@ img {
     flex-direction: column;
     align-content: space-between;    
     margin-left: 40px;
-    height: 700px;
 }
 
 @media (max-width: 767px) {
@@ -1497,10 +1496,23 @@ letter-spacing: 0.02em;
 }
 
                                             /*footer*/
+
+@media (max-width: 1199px) {
+    .footer {
+    padding-top: 97.5px;
+    padding-bottom: 96px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        padding-top: 101.5px;
+        padding-bottom: 100px;
+    }
+}
+
 .footer {
     background-color: var(--dark-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1510,37 +1522,77 @@ letter-spacing: 0.02em;
     margin-right: 120px;
 }*/
 
-.footer .logo-link {
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+@media (max-width: 767px) {
+    .footer .logo-link {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer .logo-link {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer .logo-link {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+    }
 }
 
 .footer .studio {
     color: var(--light-color);
     line-height: 1.17;
 }
-                         
+
+@media (max-width: 767px) {
+    .footer .text {
+        margin: 17.5px 65px 0 65px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer .text {
+        margin-top: 17.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer .text {
+        margin-top: 16px;
+    }
+}
+
 .footer .text {
     display: block;
-    /*max-width: 264px;*/
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    margin-top: 16px;
 }
-
-
 
 @media (max-width: 767px) {
     .foot-ul {
         display: block;
-        margin-bottom: 72px;    }
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1565,18 +1617,66 @@ letter-spacing: 0.02em;
     list-style: none;
 }
 
+
+@media (max-width: 767px) {
 .foot-li.one {
-    width: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .foot-li.one {
+        width: 264px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+.foot-li.one {
+        width: 264px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .foot-li.two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0 auto;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.foot-li.two {
+}
+}
+
+
+@media (min-width: 1200px) {
 .foot-li.two {
     width: 208px;
     margin-left: 120px;
+}
 }
 
 .foot-social-link:hover {
     background-color: var(--success-color);
 }
+
+
+@media (max-width: 767px) {
+    .soc-media-titel {
+        text-align: center;
+        margin-top: 72px;
+    }
+}
+
 
 .soc-media-titel {
     font-weight: 500;
@@ -1588,12 +1688,32 @@ letter-spacing: 0.02em;
 }
 
 /* Sozials */
+
+
+
+@media (max-width: 767px) {
 .foot-social-list {
     display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+}}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .foot-social-list {
+}
+}
+
+@media (min-width: 1200px) {
+    .foot-social-list {
+display: flex;
     flex-direction: row;
     /*gap: 24px;*/
     justify-content: space-between;
 }
+}
+
 
 .foot-social-item {
     width: 40px;
@@ -1622,8 +1742,23 @@ letter-spacing: 0.02em;
 
                 /* Форма в футере */
 
+@media (max-width: 767px) {
+.foot-form {
+        margin: 0 auto;
+        display: block;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.foot-form {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
 .foot-form {
     margin-left: 80px;
+}
 }
 
 .div-foot-input {
@@ -1631,8 +1766,28 @@ letter-spacing: 0.02em;
     max-width: 453px;    
 }
 
+
+@media (max-width: 767px) {    
 .input-foot {
+            width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {    
+.input-foot {    
+
+}
+}
+
+@media (min-width: 1200px) {
+.input-foot {   
     width: 264px;
+ }
+}
+
+
+
+.input-foot {
     height: 40px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1653,14 +1808,33 @@ letter-spacing: 0.02em;
     outline: none;
 }
 
-.button-subscribe {
-    position: relative;
+@media (max-width: 767px) {
+    .button-subscribe {
+        display: flex;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .button-subscribe {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .button-subscribe {
     display: flex;
     justify-content: space-between;
+    }
+}
+
+.button-subscribe {
+    position: relative;
     cursor: pointer;
     width: 165px;
     height: 40px;
-    margin-left: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -1677,6 +1851,20 @@ letter-spacing: 0.02em;
     transition-property: background-color;
 }
 
+@media (max-width: 767px) {
+    .subscribe_form {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 1200px) {
 .subscribe_form {
     display: flex;
     justify-content: center;
@@ -1686,6 +1874,7 @@ letter-spacing: 0.02em;
     margin-right: auto;
     margin-top: 0;
 }    
+}
 
 .icon-subscribe {
     width: 24px;
