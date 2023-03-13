@@ -23,7 +23,7 @@
             <a class="logo-link" href="./index.html">Web<span class="studio">Studio</span></a>
             
         <!-- Навигация -->
-                <ul class="nav-ul mobil" data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" >
+                <ul class="nav-ul" data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" >
                     <li><a class="header-link current" href="./index.html">Studio</a></li>
                     <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="header-link last" href="https://www.instagram.com">Contacts</a></li>
@@ -37,13 +37,18 @@
                     <li><a class="address-link tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+        <!-- Мобильное меню -->
+                <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
+                    <svg class="icon-mobile-menu">
+                        <use href="./images/icons.svg#burger-menu"></use>
+                    </svg>
+                </button>
 
-            <div class="burger-menu">
-                <svg class="icon-burger-menu">
-                    <use href="./images/icons.svg#nurali-burger"></use>
-                </svg>
-            </div>
-        </div>
+        </div>      
+
+                
+
+            
     </header>
         
     <main>
@@ -321,7 +326,7 @@
             </div>
         </section>
 
-        <!-- Модальное окно -->
+        <!-- Модальное окно в форме 1 -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="close" type="button" data-modal-close>
@@ -380,6 +385,26 @@
             </div>
         </div>
             
+        <!-- Кнопка закрытия мобильного меню -->
+        <div class="mobil-backdrop is-hidden" js-menu-container>
+            <div class="mobile-menu">
+                <button class="close mobil" type="button" js-close-menu>
+                    <svg class="icon-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav-ul mobil">
+                    <li><a class="header-link current" href="./index.html">Studio</a></li>
+                    <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="header-link last" href="https://www.instagram.com">Contacts</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+
     </main>
 <!-- 
     <footer class="footer">
@@ -449,6 +474,7 @@
         </form>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
