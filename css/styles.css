@@ -222,8 +222,9 @@ img {
 .nav.mobile {
     display: flex;
     flex-direction: column;
-    align-content: space-between;    
-    margin-left: 40px;
+    justify-content: space-between;    
+    padding-left: 40px;
+    padding-top: 80px;
 }
 
 @media (max-width: 767px) {
@@ -355,7 +356,7 @@ img {
     display: block;
     margin-bottom: 48px;
     margin-right: 0;
-    width: 353px;
+    width: 100%;
     }
 }
 
@@ -507,7 +508,6 @@ stroke: var(--nav-defauit);
     display: block;
     justify-content: left;
     list-style: none;
-    margin-top: 80px;
 }
 
 .mobile-menu .header-link {
@@ -1451,7 +1451,7 @@ letter-spacing: 0.02em;
 
 @media (max-width: 768px) {    
     .portfolio-li {
-        width: 360px;
+        width: 100%;
         margin-bottom: 48px;
     }
 
