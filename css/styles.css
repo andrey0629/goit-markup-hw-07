@@ -437,9 +437,15 @@ img {
     }
 }
 
+.menu-toggle.js-open-menu {
+stroke: var(--nav-defauit);
+    fill: var(--nav-defauit);
+}
+
 .icon-mobile-menu {
     display: block;
     stroke: var(--nav-defauit);
+    fill: var(--nav-defauit);
     width: 29.54px;
     height: 18.62px;
 }
@@ -554,6 +560,7 @@ img {
 .section-order-service.section {
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+    max-width: 1440px; 
     background-position: center;
     background-repeat: no-repeat;
     /*background-size: 480px 432px;
@@ -678,7 +685,7 @@ img {
 
 .modal {
     position: relative;
-    width: 100%;
+    width: 95vw;
     max-width: 408px;
     /*height: 100%;
     max-height: 584px;*/
@@ -857,7 +864,7 @@ img {
 }
 
 .input {
-    width: 360px;
+    width: 100%;
     height: 40px;
     box-sizing: border-box;
     border-color: var(--subtle-text-color);
@@ -882,7 +889,7 @@ img {
 
 .input.comment {
     height: 120px;
-    width: 360px;
+    width: 100%;
     margin-bottom: 0;
     padding: 8px 16px;
     display: flex;
@@ -976,6 +983,15 @@ img {
     text-transform: capitalize
 }
 
+@media (min-width: 1200px) {
+.customers .section-titel {
+    margin-bottom: 72px;
+    }
+}
+
+
+
+
 .features {
     padding-bottom: 0;
 }
@@ -995,6 +1011,7 @@ img {
         list-style: none;
         row-gap: 72px;
         flex-basis: calc((100% - 24px) / 2);
+        margin-bottom: 96px;
       }
 }
 
@@ -1295,6 +1312,7 @@ letter-spacing: 0.02em;
         row-gap: 72px;
         column-gap: 24px;
         margin-top: 72px;
+        max-width: 552px;
     }
 }
 
@@ -1640,7 +1658,9 @@ align-items: center;    }
 
 @media (max-width: 767px) {
     .footer .text {
-        margin: 17.5px 65px 0 65px;
+        margin-top: 17.5px;
+        /*margin: 17.5px 65px 0 65px;*/
+        max-width: 268px;
     }
 }
 
