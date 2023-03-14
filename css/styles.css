@@ -1433,13 +1433,13 @@ letter-spacing: 0.02em;
 
 @media (max-width: 768px) {    
     .portfolio-li {
-        width: 396px;
+        width: 360px;
         margin-bottom: 48px;
     }
 
     .portfolio-photo.section {
-        padding-bottom: 0;;
-    }
+        padding-bottom: 0;
+align-items: center;    }
 }
 
 
@@ -1460,6 +1460,8 @@ letter-spacing: 0.02em;
         list-style-type: none;
         display: block;
         row-gap: 48px;
+        width: 360px;
+        margin-right: 0;
     }
 }
 
@@ -1484,11 +1486,23 @@ letter-spacing: 0.02em;
     }
 }
 
+@media (max-width: 767px) {
 .portfolio-link {
     border: 1px solid #E7E9FC;
     transition-property: background-color, box-shadow;
     position: relative;
     transition-property: transform;
+            width: 360px;
+}
+}
+
+@media (min-width: 768px) {
+.portfolio-link {
+    border: 1px solid #E7E9FC;
+    transition-property: background-color, box-shadow;
+    position: relative;
+    transition-property: transform;
+}
 }
 
 .portfolio-link .text {
