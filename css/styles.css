@@ -223,7 +223,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    padding-left: 40px;
     padding-top: 80px;
 }
 
@@ -354,7 +353,6 @@ img {
 
     .address.mobile-menu {
     display: block;
-    margin-bottom: 48px;
     margin-right: 0;
     width: 100%;
     }
@@ -481,6 +479,10 @@ stroke: var(--nav-defauit);
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -521,9 +523,10 @@ stroke: var(--nav-defauit);
 .menu-container .sozial-list {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
+    margin-top: 48px;
     margin-right: 60px;
     margin-bottom: 40px;
+    max-height: 40px;
     flex-basis: calc((100% - 3 * 56px) / 4);
 }
 
