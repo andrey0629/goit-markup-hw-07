@@ -910,7 +910,7 @@ stroke: var(--nav-defauit);
 
 .form-policy {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -938,7 +938,7 @@ stroke: var(--nav-defauit);
     width: 16px;
     height: 16px;
     margin-top: 0;
-    margin-left: -344px;
+    margin-left: 0;
     border-radius: 2px;    
     /*background-image: url(<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.875" d="M3 0.938h18c1.139 0 2.063 0.923 2.063 2.063v18c0 1.139-0.923 2.063-2.063 2.063h-18c-1.139 0-2.063-0.923-2.063-2.063v-18c0-1.139 0.923-2.063 2.063-2.063z"></path>);
     background-image: url('../images/icons.svg#icon-checkbox');*/
