@@ -525,7 +525,7 @@ stroke: var(--nav-defauit);
     justify-content: space-between;
     margin-top: 48px;
     margin-right: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     max-height: 40px;
     flex-basis: calc((100% - 3 * 56px) / 4);
 }
